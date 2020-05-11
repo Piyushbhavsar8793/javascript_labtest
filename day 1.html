@@ -1,0 +1,36 @@
+<html>
+    <body>
+       
+    <p id="Ro"></p>
+    <button type="button" onclick="document.getElementById('Hit').innerHTML='Piyush Bhavsar'">
+               Reveal Name</button>
+    <button type="button" onclick="window.alert('Piyush Bhavsar')">Alert Name</button>
+     
+        <h1 id="one"></h1>
+        <h2 id="two"></h2>
+        <h3 id="three"></h3>
+        <h4 id="four"></h4>
+        <h5 id="five"></h5>
+       
+     <script>
+            function myFun(a,b,c)
+            {
+                if(a>b&&a>c)
+                return a;
+                else if (b>a&&b>c)
+                return b;
+                else 
+                return c;
+            }
+            var highest=myFun(7,18,45);
+           
+        document.getElementById("Ro").innerHTML="<b> The Highest Number is"+ " "+highest                       +"."+"</b>";
+        document.getElementById("one").innerHTML="Piyush Bhavsar";
+        document.getElementById("two").innerHTML="Piyush Bhavsar";
+        document.getElementById("three").innerHTML="Piyush Bhavsar";
+        document.getElementById("four").innerHTML="Piyush Bhavsar";
+        document.getElementById("five").innerHTML="Piyush Bhavsar";
+     </script>
+     </body>
+</html>
+        
