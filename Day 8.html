@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<title>Day 8.html</title>
+<head><h2>Result :-</h2></head>
+<body>
+    <h3 id="piy"></h3>
+    <p id="shu"></p><br>
+    <h3 id="piy1"></h3>
+    <p id="shu1"></p>
+<script>
+    class Student
+    {
+       constructor(roll,name,mks1,mks2,mks3,total,percentage)
+       { 
+           this.roll_number=roll;
+           this.name=name;
+           this.marks1=mks1;
+           this.marks2=mks2;
+           this.marks3=mks3;
+           this.total=null;
+           this.percentage=null;
+        }
+
+        get getRoll()
+   {
+       return this.roll;
+   }
+   
+   get getName()
+   {
+       return this.name;
+   }
+   
+   get getmarkss1()
+   {
+       return this.marks1;
+   }
+   
+   get getmarkss2()
+   {
+       return this.marks2;
+   }
+
+   get getmarkss3()
+   {
+       return this.marks3;
+   }
+
+   get gettotal()
+   {
+       return this.total;
+   }
+
+   get getpercentage()
+   {
+       return this.percentage;
+   }
+
+
+   set setRoll(roll)
+   {
+       this.roll=roll;
+   }
+   
+   set setName(name)
+   {
+       this.name=name;
+   }
+   
+   set Marks1(marks1)
+   {
+       this.marks1=marks1;
+   }
+
+   set Marks2(marks2)
+   {
+       this.marks2=marks2;
+   }
+
+   set Marks3(marks3)
+   {
+       this.marks3=marks3;
+   }
+
+   caltotal()
+   {
+       return this.total=(this.marks1+this.marks2+this.marks3);
+   }
+
+   calpercentage()
+   {
+     return this.percentage=((this.total/300)*100);
+   }
+}
+
+var obj1= new Student(10,"Piyush",70,54,45);
+var obj2= new Student(20,"Shubham",80,70,65);
+obj1.caltotal();
+obj1.calpercentage();
+obj2.caltotal();
+obj2.calpercentage();
+document.getElementById("piy").innerHTML="For object 1:";
+document.getElementById("shu").innerHTML=obj1.gettotal+" "+obj1.getpercentage.toPrecision(4);
+document.getElementById("piy1").innerHTML="For Object 2:";
+document.getElementById("shu1").innerHTML=obj2.gettotal+" "+obj2.getpercentage;
+</script>
+</body>
+</html>
